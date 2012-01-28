@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'NEU' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <img src="/static/images/neu-logo.png" alt="NEU" />
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
