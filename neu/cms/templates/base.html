@@ -10,26 +10,30 @@
     <body>
         <div id="canvas">
             <div id="header">
-                <a href="/"><img src="/static/images/neu-logo.png" /></a>
-                <ul id="menu">
-                    <li>Sobre<li>
-                    <li><div style="display: inline; widht: 290px">Iniciativas</div></li>
-                    <li><div style="display: inline; widht: 290px">Junte-se a nós</div></li>
-                {% for menu_item in menu_items %}
-                    <li>{{ menu_item.name }}</li>
-                {% endfor %}
-                </ul>
+                <div id="logo">
+                    <a href="/"><img src="/static/images/neu-logo.png" /></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <span class="round_span1"></span>
+                        <span class="round_span2"></span>
+                        <span class="round_span3"></span>
+                        <span id="main_span">
+                            <li>sobre</li>
+                            <li>iniciativas</li>
+                            <li>embaixadores</li>
+                            <li>cadastre-se</li>
+                            <li>contato</li>
+                        </span>
+                        <span class="round_span1"></span>
+                        <span class="round_span2"></span>
+                        <span class="round_span3"></span>
+                    </ul>
+                </div>
             </div>
             <div id="main">
-                <div id="content">
-                    <div id="site-info">
-                    </div>
-                </div>
             </div>
             <div id="footer">
-                <div id="header-bar">
-                    <p><a href="/adicionar/usuario/">Login</a></p>
-                </div>
             </div>
         </div>
     </body>

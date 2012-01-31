@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Verdana, Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background: #fff;
+}
+
+div#canvas {
+    width: 980px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+div#header {
+    margin-bottom: 10px;
+    height: 60px;
+    padding: 5px;
+    background-image: linear-gradient(bottom, #000000 50%, #343434 50%);
+    background-image: -o-linear-gradient(bottom, #000000 50%, #343434 50%);
+    background-image: -moz-linear-gradient(bottom, #000000 50%, #343434 50%);
+    background-image: -webkit-linear-gradient(bottom, #000000 50%, #343434 50%);
+    background-image: -ms-linear-gradient(bottom, #000000 50%, #343434 50%);
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.5, #000000),
+                                       color-stop(0.5, #343434));
+}
+
+ul#menu li {
+    display: inline;
+}
+
+div#main {
+}
+
+div#footer {
+    padding: 5px;
+}
+
+div#header p {
+    float: left;
+    margin-left: 40px;
+}
+
+#header-bar {
+    margin-top: 7px;
+    margin-right: 50px;
+    float: right;
+}
+
+#header-bar p {
+    display: inline;
+    margin-left: 60px;
+}
+
+#header-bar a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff
+}
+
+#header-bar a:hover {
+    background: #007bcd;
+    text-decoration: underline;
+}
