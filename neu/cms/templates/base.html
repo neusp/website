@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Núcleo de Empreendedorismo da USP</title>
+        <link href="/static/css/base.css" rel="stylesheet" type="text/css" />
+        <script src="/static/js/jquery-1.7.1.min.js"></script>
+        <script src="jquery-ui-1.8.17.custom.min.js"></script>
+    </head>
+    <body>
+        <div id="canvas">
+            <div id="header">
+                <a href="/"><img src="/static/images/neu-logo.png" /></a>
+                <ul id="menu">
+                    <li>Sobre<li>
+                    <li><div style="display: inline; widht: 290px">Iniciativas</div></li>
+                    <li><div style="display: inline; widht: 290px">Junte-se a nós</div></li>
+                {% for menu_item in menu_items %}
+                    <li>{{ menu_item.name }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="main">
+                <div id="content">
+                    <div id="site-info">
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="header-bar">
+                    <p><a href="/adicionar/usuario/">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
