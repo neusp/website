@@ -71,7 +71,6 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    'static',
 )
 
 # List of finder classes that know how to find static files in
