@@ -15,87 +15,77 @@ li {
 }
 
 body {
-    background: #d4d4d4;
-}
-
-div#canvas {
-    width: 980px;
-    height: 600px;
-    margin: 0 auto;
-    border: 1px solid red;
+    background: #eee;
 }
 
 div#header {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 45px;
+    background-image: url('/static/images/top-bar-bg.png');
+}
+
+div#header-container {
+    width: 700px;
+    margin: 0 auto;
 }
 
 div#logo {
-    width: 100px;
+    height: 80px;
+    width: 190px;
     float: left;
+    text-align: center;
+    position: relative;
+    top: 20px;
 }
 
-div#menu {
-    width: 800px;
+div#logo-left {
+    height: 80px;
+    width: 20px;
+    float: left;
+    background-image: url('/static/images/roundbox_bl.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+div#logo-right {
+    height: 80px;
+    width: 170px;
     float: right;
+    background-image: url('/static/images/roundbox_br.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
-div#menu ul {
-    margin-top: 10px;
+img#logo-img {
+    position: relative;
+    top: -80px;
+}
+
+div#social {
+    width: 250px;
+    float: right;
+    margin-top: 9px;
+}
+
+div#social ul {
     text-align: right;
-    font-weight: bold;
 }
 
-span.round_span1 {
-    background: #ccc;
-    display: block;
-    line-height: 1px;
-    overflow: hidden;
-    height: 1px;
-    margin: 0 2px;
-}
-
-span.round_span2 {
-    background: #ccc;
-    display: block;
-    line-height: 1px;
-    overflow: hidden;
-    height: 1px;
-    margin: 0 2px;
-}
-
-span.round_span3 {
-    background: #ccc;
-    display: block;
-    line-height: 1px;
-    overflow: hidden;
-    height: 1px;
-    margin: 0 2px;
-}
-
-div#menu span#main_span {
-    border: 1px solid #666666;
-    padding: 10px;
-    background-image: linear-gradient(bottom, #000000 50%, #666666 50%);
-    background-image: -o-linear-gradient(bottom, #000000 50%, #666666 50%);
-    background-image: -moz-linear-gradient(bottom, #000000 50%, #666666 50%);
-    background-image: -webkit-linear-gradient(bottom, #000000 50%, #666666 50%);
-    background-image: -ms-linear-gradient(bottom, #000000 50%, #666666 50%);
-    background-image: -webkit-gradient(linear,
-                                       left bottom,
-                                       left top,
-                                       color-stop(0.5, #000000),
-                                       color-stop(0.5, #666666));
-}
-
-div#menu li {
+div#social ul li {
     display: inline;
-    padding-left: 35px;
-    padding-right: 35px;
-    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#social ul li img {
+    height: 20px;
+    width: 20px;
 }
 
 div#main {
+    width: 1024px;
+    height: 600px;
+    margin: 0 auto;
+    background: orange;
 }
 
 div#footer {
