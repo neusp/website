@@ -1,8 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Helvetica, Verdana, Arial, Tahoma, sans-serif;
-    font-size: 14px;
+    font-family: "PT Sans Narrow", "PT Sans", Helvetica, Verdana, Arial, Tahoma, sans-serif;
+    font-size: 20px;
     color: #000;
 }
 
@@ -85,12 +85,13 @@ div#main {
     width: 1024px;
     height: 600px;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
 div#content {
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #ccc;
 }
 
 div#menu {
@@ -104,10 +105,12 @@ div#menu li {
     float: left;
     padding-left: 50px;
     padding-right: 50px;
-    line-height: 47px;
-    border: 1px solid #ba1d1d;
-    border-left: 0px;
+    line-height: 50px;
     background-image: url('/static/images/menu-gradient.png');
+}
+
+div#menu li:hover {
+    background-image: url('/static/images/menu-gradient-hover.png');
 }
 
 div#menu li a {
