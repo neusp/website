@@ -19,78 +19,17 @@ body {
     background: #eee;
 }
 
-div#header {
-    height: 48px;
-    background-image: url('/static/images/top-bar-bg.png');
-}
-
-div#header-container {
-    width: 800px;
+div#canvas {
+    width: 1024px;
     margin: 0 auto;
-}
-
-div#logo {
-    height: 85px;
-    width: 190px;
-    float: left;
-    text-align: center;
-    position: relative;
-    top: 20px;
-}
-
-div#logo-left {
-    height: 100%;
-    width: 10%;
-    float: left;
-    background-image: url('/static/images/roundbox_bl.png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-}
-
-div#logo-right {
-    height: 100%;
-    width: 90%;
-    float: right;
-    background-image: url('/static/images/roundbox_br.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
-
-img#logo-img {
-    position: relative;
-    top: -85px;
-}
-
-div#social {
-    width: 250px;
-    float: right;
-    margin-top: 9px;
-}
-
-div#social ul {
-    text-align: right;
-}
-
-div#social li {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-div#social img {
-    height: 20px;
-    width: 20px;
 }
 
 div#main {
-    width: 1024px;
     height: 600px;
-    margin: 0 auto;
     margin-top: 10px;
 }
 
 div#content {
-    width: 100%;
     height: 100%;
     background: #ccc;
 }
@@ -98,7 +37,7 @@ div#content {
 div#menu {
     height: 40px;
     position: relative;
-    top: -600px;
+    top: -590px;
 }
 
 div#menu * {
@@ -110,7 +49,7 @@ div#menu * {
 
 div#menu li {
     display: inline;
-    float: right;
+    float: left;
     padding-left: 50px;
     padding-right: 50px;
     line-height: 40px;
@@ -121,5 +60,13 @@ div#menu li:hover {
     background-image: url('/static/images/menu-gradient-hover.png');
 }
 
-div#footer {
+div#social {
+    width: 32px;
+    position: relative;
+    right: -1057px;
+    top: -630px;
+}
+
+div#social li {
+    margin-bottom: 10px;
 }
