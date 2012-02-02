@@ -1,9 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "PT Sans Narrow", "PT Sans", Helvetica, Verdana, Arial, Tahoma, sans-serif;
-    font-size: 20px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 14px;
     color: #000;
+    text-decoration: none;
 }
 
 img {
@@ -19,17 +20,17 @@ body {
 }
 
 div#header {
-    height: 45px;
+    height: 48px;
     background-image: url('/static/images/top-bar-bg.png');
 }
 
 div#header-container {
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
 }
 
 div#logo {
-    height: 80px;
+    height: 85px;
     width: 190px;
     float: left;
     text-align: center;
@@ -38,8 +39,8 @@ div#logo {
 }
 
 div#logo-left {
-    height: 80px;
-    width: 20px;
+    height: 100%;
+    width: 10%;
     float: left;
     background-image: url('/static/images/roundbox_bl.png');
     background-repeat: no-repeat;
@@ -47,8 +48,8 @@ div#logo-left {
 }
 
 div#logo-right {
-    height: 80px;
-    width: 170px;
+    height: 100%;
+    width: 90%;
     float: right;
     background-image: url('/static/images/roundbox_br.png');
     background-repeat: no-repeat;
@@ -57,7 +58,7 @@ div#logo-right {
 
 img#logo-img {
     position: relative;
-    top: -80px;
+    top: -85px;
 }
 
 div#social {
@@ -70,13 +71,13 @@ div#social ul {
     text-align: right;
 }
 
-div#social ul li {
+div#social li {
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-div#social ul li img {
+div#social img {
     height: 20px;
     width: 20px;
 }
@@ -85,7 +86,7 @@ div#main {
     width: 1024px;
     height: 600px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 div#content {
@@ -95,28 +96,29 @@ div#content {
 }
 
 div#menu {
-    height: 50px;
+    height: 40px;
     position: relative;
-    top: -50px;
+    top: -600px;
+}
+
+div#menu * {
+    font-size: 20px;
+    font-family: "PT Sans Narrow", Helvetica, Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
 }
 
 div#menu li {
     display: inline;
-    float: left;
+    float: right;
     padding-left: 50px;
     padding-right: 50px;
-    line-height: 50px;
+    line-height: 40px;
     background-image: url('/static/images/menu-gradient.png');
 }
 
 div#menu li:hover {
     background-image: url('/static/images/menu-gradient-hover.png');
-}
-
-div#menu li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
 
 div#footer {
