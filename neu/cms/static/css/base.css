@@ -23,11 +23,8 @@ body {
 div#main {
     height: 650px;
     width: 800px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -325px;
-    margin-left: -400px;
+    margin: 0 auto;
+    margin-top: 10px;
     background: #fff;
     border: 1px solid #ccc;
 }
