@@ -26,52 +26,6 @@ class Page(models.Model):
         return u'%s' % (self.name,)
 
 
-class NavigationMenu(models.Model):
-    name = models.CharField(
-        'Nome',
-        max_length=128
-    )
-
-    class Meta:
-        verbose_name = 'Menu de navegação'
-        verbose_name_plural = 'Menus de navegação'
-
-    def __unicode__(self):
-        return u'%s' % (self.name,)
-
-
-class NavigationMenuItem(models.Model):
-    name = models.CharField(
-        'Nome',
-        max_length=128,
-        help_text='Texto que será colocado no menu de navegação.'
-    )
-    navigation_menu = models.ForeignKey(
-        NavigationMenu,
-        verbose_name='Menu de navegação',
-        related_name='itens'
-    )
-    page = models.ForeignKey(
-        Page,
-        verbose_name='Página'
-    )
-    selected = models.BooleanField(
-        'Selecionado',
-        default=False
-    )
-    order = models.IntegerField(
-        'Ordem',
-        help_text='Ordem do item no menu de navegação.'
-    )
-
-    class Meta:
-        verbose_name = 'Item do menu de navegação'
-        verbose_name_plural = 'Itens do menu de navegação'
-
-    def __unicode__(self):
-        return u'%s - %s' % (unicode(self.navigation_menu), self.name)
-
-
 class Template(models.Model):
     name = models.CharField(
         'Nome',
@@ -96,12 +50,6 @@ class Template(models.Model):
         'Ordem',
         help_text='Ordem do template na página.'
     )
-    navigation_menu = models.ForeignKey(
-        NavigationMenu,
-        verbose_name='Menu de navegação',
-        blank=True,
-        null=True
-    )
 
     class Meta:
         verbose_name = 'Template'
@@ -119,6 +67,7 @@ class MenuItem(models.Model):
     page = models.ForeignKey(
         Page,
         verbose_name='Página',
+        related_name='menus',
         blank=True,
         null=True
     )
@@ -126,16 +75,16 @@ class MenuItem(models.Model):
         'Cor',
         max_length=128,
         choices=(
-            ('blue', 'Azul'),
-            ('yellow', 'Amarelo'),
-            ('pink', 'Rosa'),
-            ('orange', 'Laranja')
+            ('#e0e020', 'Amarelo'),
+            ('#86b226', 'Verde'),
+            ('#f09010', 'Laranja'),
+            ('#f01070', 'Rosa'),
+            ('#30b0f0', 'Azul')
         ),
         help_text='Cor que será utilizada no menu.'
     )
     order = models.IntegerField(
         'Ordem',
-        unique=True,
         help_text='Ordem do item no menu.'
     )
 

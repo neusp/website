@@ -18,16 +18,31 @@
                 });
             });
         </script>
+        <style>
+            {% for menu_item in menu_items %}
+            li#menu{{ forloop.counter }}:hover {
+                background: {{ menu_item.color }};
+            }
+            {% endfor %}
+            .pagination li.current a {
+                background: {{ menu_item.color }};
+                background-image: url('/static/images/circle.png');
+            }
+        </style>
     </head>
     <body>
         <div id="main">
             <div id="canvas">
                 <div id="menu">
                     <ul>
-                        <a href="#"><li>Sobre</li></a>
-                        <a href="#"><li>Iniciativas</li></a>
-                        <a href="#"><li>Newsletter</li></a>
-                        <a href="#"><li>Embaixadores</li></a>
+                        {% for menu_item in menu_items %}
+                            {% if menu_item.page %}
+                            <a href="{{ menu_item.page.url }}">
+                            {% else %}
+                            <a href="#">
+                            {% endif %}
+                            <li id="menu{{ forloop.counter }}">{{ menu_item.name }}</li></a>
+                        {% endfor %}
                     </ul>
                     <p style="clear: both"><img src="/static/images/border.png" /></p>
                 </div>
