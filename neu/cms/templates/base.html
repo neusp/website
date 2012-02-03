@@ -48,22 +48,11 @@
                 </div>
                 <div id="slides">
                     <div class="slides_container">
-                        <div>
-                            <h1>Slide 1</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        {% for template in templates %}
+                        <div style="background: url(/media/{{ template.image }})">
+                            <h1 style="font-size: 30px; color: {{ menu_item.color }}">{{ template.title }}</h1>
                         </div>
-                        <div>
-                            <h1>Slide 2</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div>
-                            <h1>Slide 3</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div>
-                            <h1>Slide 4</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
+                        {% endfor %}
                     </div>
                     <a href="#" class="prev"><img src="/static/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
                     <a href="#" class="next"><img src="/static/images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
