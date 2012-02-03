@@ -6,12 +6,22 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
         <link href="/static/css/base.css" rel="stylesheet" type="text/css" />
         <script src="/static/js/jquery-1.7.1.min.js"></script>
+        <script src="/static/js/slides.min.jquery.js"></script>
+        <script>
+            $(function(){
+                $('#slides').slides({
+                    preload: true,
+                    preloadImage: 'img/loading.gif',
+                    play: 5000,
+                    pause: 2500,
+                    hoverPause: true
+                });
+            });
+        </script>
     </head>
     <body>
-        <div id="canvas">
-            <div id="main">
-                <div id="content">
-                </div>
+        <div id="main">
+            <div id="canvas">
                 <div id="menu">
                     <ul>
                         <a href="#"><li>Sobre</li></a>
@@ -19,14 +29,29 @@
                         <a href="#"><li>Newsletter</li></a>
                         <a href="#"><li>Embaixadores</li></a>
                     </ul>
+                    <p style="clear: both"><img src="/static/images/border.png" /></p>
                 </div>
-            </div>
-            <div id="footer">
-                <div id="social">
-                    <ul>
-                        <li><img src="/static/images/facebook.png" /></li>
-                        <li><img src="/static/images/twitter.png" /></li>
-                    </ul>
+                <div id="slides">
+                    <div class="slides_container">
+                        <div>
+                            <h1>Slide 1</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div>
+                            <h1>Slide 2</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div>
+                            <h1>Slide 3</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div>
+                            <h1>Slide 4</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="prev"><img src="/static/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+                    <a href="#" class="next"><img src="/static/images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
                 </div>
             </div>
         </div>

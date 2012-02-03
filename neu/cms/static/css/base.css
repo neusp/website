@@ -16,28 +16,26 @@ li {
 }
 
 body {
-    background: #eee;
-}
-
-div#canvas {
-    width: 1024px;
-    margin: 0 auto;
+    background: #ededed;
 }
 
 div#main {
-    height: 600px;
-    margin-top: 10px;
-}
-
-div#content {
-    height: 100%;
-    background: #ccc;
+    height: 650px;
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -325px;
+    margin-left: -400px;
+    background: #fff;
+    border: 1px solid #ccc;
 }
 
 div#menu {
-    height: 40px;
     position: relative;
-    top: -590px;
+    top: 10px;
+    right: 25px;
+    z-index: 150;
 }
 
 div#menu * {
@@ -53,20 +51,86 @@ div#menu li {
     padding-left: 50px;
     padding-right: 50px;
     line-height: 40px;
-    background-image: url('/static/images/menu-gradient.png');
+    background: #000;
 }
 
 div#menu li:hover {
-    background-image: url('/static/images/menu-gradient-hover.png');
+    background: red;
 }
 
-div#social {
-    width: 32px;
-    position: relative;
-    right: -1057px;
-    top: -630px;
+#slides {
+    height: 570px;
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
 }
 
-div#social li {
-    margin-bottom: 10px;
+.slides_container {
+    height: 550px;
+    width: 780px;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: green;
+}
+
+.slides_container div {
+    padding-top: 280px;
+    width: 780px;
+}
+
+.slides_container a {
+    height: 550px;
+    width: 780px;
+    display: block;
+}
+
+#slides .next, #slides .prev {
+    width: 24px;
+    height: 43px;
+    z-index: 101;
+    display: block;
+}
+
+#slides .next {
+    position: absolute;
+    top: 268px;
+    left: 800px;
+}
+
+#slides .prev {
+    position: absolute;
+    top: 268px;
+    left: -24px;
+}
+
+.pagination {
+    margin: 26px auto 0;
+    width: 100px;
+}
+
+.pagination li {
+    float: left;
+    margin: 0 1px;
+    list-style: none;
+}
+
+.pagination li a {
+    display: block;
+    width: 16px;
+    height: 0;
+    padding-top: 16px;
+    background: #ededed;
+    background-image: url('/static/images/circle.png');
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.pagination li.current a {
+    background: green;
+    background-image: url('/static/images/circle.png');
 }
