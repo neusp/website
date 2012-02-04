@@ -9,7 +9,7 @@ class MenuSubitemInline(admin.StackedInline):
 
 class MenuItemAdmin(admin.ModelAdmin):
     list_display = ('name', 'order', 'color',)
-    inlines = [MenuSubitemInline]
+    # inlines = [MenuSubitemInline]
 
 
 class TemplateInline(admin.StackedInline):
