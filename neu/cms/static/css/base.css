@@ -16,7 +16,6 @@ li {
 }
 
 body {
-    background: #ededed;
     background: url('/static/images/texture.png')
 }
 
@@ -30,14 +29,14 @@ div#main {
 }
 
 div#menu {
+    height: 40px;
+    margin-top: -1px;
     position: relative;
-    top: 10px;
     right: 25px;
-    z-index: 150;
 }
 
 div#menu * {
-    font-size: 18px;
+    font-size: 17px;
     font-family: "PT Sans Narrow", Helvetica, Verdana, Arial, sans-serif;
     font-weight: bold;
     color: #fff;
@@ -53,10 +52,9 @@ div#menu li {
 }
 
 #slides {
+    position: absolute;
     height: 570px;
     width: 800px;
-    position: absolute;
-    top: 50px;
     z-index: 100;
 }
 
@@ -71,13 +69,13 @@ div#menu li {
 }
 
 .slides_container div {
-    padding-top: 280px;
     width: 780px;
     height: 550px;
 }
 
 .slides_container a {
     width: 780px;
+    height: 550px;
     display: block;
 }
 
@@ -108,7 +106,6 @@ div#menu li {
 .pagination li {
     float: left;
     margin: 0 1px;
-    list-style: none;
 }
 
 .pagination li a {
@@ -118,7 +115,5 @@ div#menu li {
     padding-top: 16px;
     background: #ededed;
     background-image: url('/static/images/circle.png');
-    background-position: 0 0;
-    float: left;
     overflow: hidden;
 }
