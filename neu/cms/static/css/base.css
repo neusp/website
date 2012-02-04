@@ -30,9 +30,11 @@ div#main {
 
 div#menu {
     height: 40px;
+    width: 826px;
     margin-top: -1px;
     position: relative;
     right: 25px;
+    background: #000;
 }
 
 div#menu * {
@@ -48,7 +50,6 @@ div#menu li {
     padding-left: 30px;
     padding-right: 30px;
     line-height: 40px;
-    background: #000;
 }
 
 div#slides {
@@ -56,6 +57,7 @@ div#slides {
     width: 800px;
     position: absolute;
     z-index: 100;
+    background: #fff;
 }
 
 .slides_container {
@@ -100,7 +102,6 @@ div#slides {
 
 .pagination {
     margin-top: 26px;
-    margin-right: 10px;
 }
 
 .pagination li {
