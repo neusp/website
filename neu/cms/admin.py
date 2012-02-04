@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-
 from django.contrib import admin
 from cms.models import *
 
-class MenuSubitemInline(admin.StackedInline):
-    model = MenuSubitem
-
-
 class MenuItemAdmin(admin.ModelAdmin):
     list_display = ('name', 'order', 'color',)
-    # inlines = [MenuSubitemInline]
 
 
 class TemplateInline(admin.StackedInline):

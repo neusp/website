@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-
-from django.http import HttpResponse, HttpResponseRedirect, Http404
-from cms.models import Page, MenuItem, MenuSubitem
+from django.http import HttpResponseRedirect, Http404
+from cms.models import Page, MenuItem
 from django.shortcuts import render_to_response, get_object_or_404
 
 def main(request):
