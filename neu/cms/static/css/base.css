@@ -58,7 +58,13 @@ div#slides {
     position: absolute;
     z-index: 100;
     background: #fff;
-    background-image: url('/static/images/loading.gif');
+}
+
+p#loading-image {
+    height: 0px;
+    position: absolute;
+    top: 269px;
+    text-align: center;
 }
 
 .slides_container {
