@@ -105,7 +105,7 @@ div#slides {
 }
 
 .pagination li {
-    float: right;
+    float: left;
     margin: 0 1px;
 }
 
