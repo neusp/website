@@ -64,6 +64,7 @@ p#loading-image {
     height: 0px;
     position: absolute;
     top: 269px;
+    width: 100%;
     text-align: center;
 }
 
