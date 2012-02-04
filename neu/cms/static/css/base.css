@@ -16,11 +16,11 @@ li {
 }
 
 body {
-    background: url('/static/images/texture.png')
+    background: #ededed;
 }
 
 div#main {
-    height: 650px;
+    height: 609px;
     width: 800px;
     margin: 0 auto;
     margin-top: 10px;
@@ -51,10 +51,10 @@ div#menu li {
     background: #000;
 }
 
-#slides {
-    position: absolute;
+div#slides {
     height: 570px;
     width: 800px;
+    position: absolute;
     z-index: 100;
 }
 
@@ -99,12 +99,12 @@ div#menu li {
 }
 
 .pagination {
-    margin: 26px auto 0;
-    width: 100px;
+    margin-top: 26px;
+    margin-right: 10px;
 }
 
 .pagination li {
-    float: left;
+    float: right;
     margin: 0 1px;
 }
 
@@ -113,7 +113,7 @@ div#menu li {
     width: 16px;
     height: 0;
     padding-top: 16px;
-    background: #ededed;
+    background: #aaa;
     background-image: url('/static/images/circle.png');
     overflow: hidden;
 }

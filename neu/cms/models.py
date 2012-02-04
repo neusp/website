@@ -5,10 +5,6 @@ from django.core import validators
 from django.core.exceptions import ValidationError
 
 class Page(models.Model):
-    name = models.CharField(
-        'Nome',
-        max_length=128
-    )
     url = models.CharField(
         'URL',
         max_length=128,
@@ -19,18 +15,14 @@ class Page(models.Model):
     )
 
     class Meta:
-        ordering = ('name',)
+        ordering = ('url',)
         verbose_name = 'Página'
     
     def __unicode__(self):
-        return u'%s' % (self.name,)
+        return u'%s' % (self.url,)
 
 
 class Template(models.Model):
-    name = models.CharField(
-        'Nome',
-        max_length=128
-    )
     title = models.CharField(
         'Título',
         max_length=128,
@@ -55,7 +47,7 @@ class Template(models.Model):
         verbose_name = 'Template'
 
     def __unicode__(self):
-        return u'%s' % (self.name,)
+        return u'%s' % (self.title,)
 
 
 class MenuItem(models.Model):
