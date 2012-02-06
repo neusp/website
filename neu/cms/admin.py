@@ -14,5 +14,8 @@ class PageAdmin(admin.ModelAdmin):
     inlines = [TemplateInline]
 
 
-admin.site.register(MenuItem, MenuItemAdmin)
+admin.site.register(Person)
 admin.site.register(Page, PageAdmin)
+admin.site.register(RegisterFormPosition)
+admin.site.register(TemplateType)
+admin.site.register(MenuItem, MenuItemAdmin)

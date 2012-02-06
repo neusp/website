@@ -51,7 +51,10 @@
                     <div class="slides_container">
                         {% for template in templates %}
                         <div style="background: url(/media/{{ template.image }})">
-                            <h1 style="font-size: 30px; color: {{ menu_item.color }}">{{ template.title }}</h1>
+                            <h1 style="font-size: {{ template.type.title_size }}px; color: {{ menu_item.color }}; position: absolute; top: {{ template.type.title_y }}px; left: {{ template.type.title_x }}px">{{ template.title }}</h1>
+                            <div style="padding: 10px; background: rgba(255,255,255,0.7); width: {{ template.type.text_width }}px; position: absolute; top: {{ template.type.text_y }}px; left: {{ template.type.text_x }}px; height: auto">
+                                <p style="color: {{ menu_item.color }}; font-size: {{ template.type.text_size }}">{{ template.text }}</p>
+                            </div>
                         </div>
                         {% endfor %}
                     </div>
