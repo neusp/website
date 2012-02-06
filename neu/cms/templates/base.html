@@ -55,6 +55,17 @@
                             <div style="padding: 10px; background: rgba(255,255,255,0.7); width: {{ template.type.text_width }}px; position: absolute; top: {{ template.type.text_y }}px; left: {{ template.type.text_x }}px; height: auto">
                                 <p style="color: {{ menu_item.color }}; font-size: {{ template.type.text_size }}">{{ template.text }}</p>
                             </div>
+                            {% if template.type.register_form %}
+                            <form method="post" action="" style="position: absolute; top: {{ template.type.register_form.y }}px; left: {{ template.type.register_form.x }}px; background: {{ menu_item.color }}">
+                            {% csrf_token %}
+                            {% if not saved %}
+                            {{ register_form.as_p }}
+                            <p><input type="submit" style="margin-bottom: 0px; margin-top: 20px; width: auto" value="Cadastrar" /></p>
+                            {% else %}
+                            <p><label>Cadastrado com sucesso!</label></p>
+                            {% endif %}
+                            </form>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     </div>

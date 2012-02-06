@@ -93,6 +93,22 @@ p#loading-image {
     display: block;
 }
 
+.slides_container label {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+.slides_container input {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.slides_container form {
+    width: 500px;
+    padding: 10px;
+}
+
 #slides .next, #slides .prev {
     width: 24px;
     height: 43px;
